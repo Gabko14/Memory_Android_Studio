@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_bananas.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\bananas.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_pineapplerl.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\pineapplerl.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_raspberry.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\raspberry.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\layout_activity_end_screen.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\layout\\activity_end_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "com.example.memory.app-merged_res-25:/layout_activity_main.xml.flat",
+        "source": "com.example.memory.app-main-27:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_strawberrys.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\strawberrys.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_bitten_apple.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\bitten_apple.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_pineapple.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\pineapple.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_pineapplepng.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\pineapplepng.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_pineapplewhite.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\pineapplewhite.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_mango.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\mango.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\layout_activity_main2.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-pngs-20:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_watermelon.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\watermelon.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_kiwi.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\kiwi.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_cherry.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\cherry.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\drawable_grape.jpg.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\drawable\\grape.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-merged_res-25:\\layout_activity_main_start.xml.flat",
+        "source": "C:\\Users\\Schnupperlehrling\\.gradle\\daemon\\7.3.3\\com.example.memory.app-main-27:\\layout\\activity_main_start.xml"
+    }
+]
