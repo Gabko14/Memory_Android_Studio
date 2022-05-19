@@ -1,21 +1,28 @@
 package com.example.memory;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.memory.databinding.ActivityMainBinding;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,9 +32,13 @@ public class MainActivity<createButton> extends AppCompatActivity {
     private int pointsCounter = 0;
     public double timerCounter;
 
+    private Button sendDatabtn;
+
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    Highscores highscores;
+
     private List<Integer> imageList = new ArrayList<>();
-
-
     private List<Integer> openedCardsImages = new ArrayList<>();
     private List<Integer> openedCards = new ArrayList<>();
 
@@ -56,6 +67,20 @@ public class MainActivity<createButton> extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button restartButton = findViewById(R.id.restartButton);
+        restartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resortCards();
+            }
+        });
+        Button nextActivityButton = findViewById(R.id.nextButton);
+        nextActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchActivity();
+            }
+        });
 
         imageList.add(R.drawable.mango);
         imageList.add(R.drawable.mango);
@@ -80,29 +105,9 @@ public class MainActivity<createButton> extends AppCompatActivity {
         buttonFunction();
         setUpTimer();
     }
-
-    private void launchActivity() {
-
-        Intent intent = new Intent(this, EndScreenActivity.class);
-        intent.putExtra("time",timerCounter);
-        System.out.println("im here1 " + timerCounter);
-        startActivity(intent);
+    private void addDatatoFirebase(String points) {
+        highscores.setPoints(points);
     }
-
-    public void setUpTimer() {
-        TextView timer = findViewById(R.id.Timer);
-        new CountDownTimer(69000000, 100){
-            public void onTick(long millisUntilFinished){
-                timerCounter += 0.1;
-                timer.setText(new DecimalFormat("##.0").format(timerCounter));
-//                timer.setText(String.valueOf(timerCounter));
-            }
-            public  void onFinish(){
-
-            }
-        }.start();
-    }
-
     public void buttonFunction() {
 
         for (int counter = 0; counter < buttonsArray.length; counter++) {
@@ -128,6 +133,27 @@ public class MainActivity<createButton> extends AppCompatActivity {
         }
     }
 
+    private void launchActivity() {
+
+        Intent intent = new Intent(this, EndScreenActivity.class);
+        intent.putExtra("time",timerCounter);
+        System.out.println("im here1 " + timerCounter);
+        startActivity(intent);
+    }
+
+    public void setUpTimer() {
+        TextView timer = findViewById(R.id.Timer);
+        new CountDownTimer(69000000, 100){
+            public void onTick(long millisUntilFinished){
+                timerCounter += 0.1;
+                timer.setText(new DecimalFormat("##.0").format(timerCounter));
+//                timer.setText(String.valueOf(timerCounter));
+            }
+            public  void onFinish(){
+
+            }
+        }.start();
+    }
     public void checkIfCardsMatch(){
         if (cardCounter > 1) {
             Integer card1 = openedCardsImages.get(0);
@@ -144,7 +170,7 @@ public class MainActivity<createButton> extends AppCompatActivity {
             cardCounter = 0;
         }
     }
-    public void restartFunction(View view) {
+    public void resortCards() {
         for (int buttonId : buttonsArray) {
             ImageButton button = findViewById(buttonId);
             openedCardsImages.clear();
@@ -153,6 +179,10 @@ public class MainActivity<createButton> extends AppCompatActivity {
             button.setImageResource(0);
             button.setBackgroundTintList(ColorStateList.valueOf(Color.rgb(166, 29, 29)));
             Collections.shuffle(imageList);
+            new Handler().postDelayed(() -> {
+                timerCounter = 0;
+            }, 300);
+
         }
     }
 

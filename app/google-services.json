@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628235235817",
+    "firebase_url": "https://memor-3baa1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "memor-3baa1",
+    "storage_bucket": "memor-3baa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628235235817:android:ab30cdbb0b3e517c9bdb78",
+        "android_client_info": {
+          "package_name": "com.example.memory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628235235817-9pp6lm0k74ca47lvagg2admcm1951v0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh8oru4MBZFT8eSXKlrajovp3NQ5VkClA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628235235817-9pp6lm0k74ca47lvagg2admcm1951v0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

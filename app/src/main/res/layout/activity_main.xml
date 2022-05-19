@@ -30,6 +30,12 @@
         android:gravity="center|center_horizontal|center_vertical"
         android:weightSum="0">
 
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next" />
+
         <TextView
             android:id="@+id/Timer"
             android:layout_width="wrap_content"
@@ -39,6 +45,12 @@
             android:textColor="#000000"
             android:textSize="48sp"
             tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart" />
 
     </TableRow>
 
