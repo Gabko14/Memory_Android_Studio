@@ -74,13 +74,6 @@ public class MainActivity<createButton> extends AppCompatActivity {
                 resortCards();
             }
         });
-        Button nextActivityButton = findViewById(R.id.nextButton);
-        nextActivityButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                launchActivity();
-            }
-        });
 
         imageList.add(R.drawable.mango);
         imageList.add(R.drawable.mango);
