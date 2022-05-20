@@ -29,6 +29,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 public class EndScreenActivity extends AppCompatActivity {
 
@@ -128,11 +129,17 @@ public class EndScreenActivity extends AppCompatActivity {
                     } else {
                         databaseReference = firebaseDatabase.getReference(allTogetherRefference);
 
+
                         double endTime = getIntent().getExtras().getDouble("time");
                         new DecimalFormat("0.0").format(endTime);
                         String formattedTime = new DecimalFormat("##.0").format(endTime);
-
                         addDatatoFirebase(formattedTime, "99.0", "99.0", "99.0", "99.0");
+                        doubleFormated1 = formattedTime;
+                        doubleFormated2 = "99.0";
+                        doubleFormated3 = "99.9";
+                        doubleFormated4 = "99.9";
+                        doubleFormated5 = "99.9";
+                        bestTimeView.setText(formattedTime);
                     }
                 }
             }
