@@ -24,9 +24,10 @@
         android:weightSum="0">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/score1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="1."
             android:textSize="34sp" />
     </TableRow>
@@ -48,9 +49,10 @@
         android:weightSum="0">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/score2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="2."
             android:textSize="34sp" />
     </TableRow>
@@ -72,9 +74,10 @@
         android:weightSum="0">
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/score3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="3."
             android:textSize="34sp" />
     </TableRow>
@@ -96,9 +99,10 @@
         android:weightSum="0">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/score4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="4."
             android:textSize="34sp" />
     </TableRow>
@@ -120,11 +124,41 @@
         android:weightSum="0">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/score5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="5."
             android:textSize="34sp" />
+
+    </TableRow>
+
+    <Space
+        android:layout_margin="10dp"
+        android:padding="100dp">
+
+    </Space>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:weightSum="0">
+
+        <Button
+            android:id="@+id/mainMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu" />
     </TableRow>
 </TableLayout>
 

@@ -37,6 +37,11 @@ public class EndScreenActivity extends AppCompatActivity {
     Highscores highscores;
     private boolean bool = true;
     private String userID;
+    private String doubleFormated1;
+    private String doubleFormated2;
+    private String doubleFormated3;
+    private String doubleFormated4;
+    private String doubleFormated5;
 
     private List<Double> topScoreList = new ArrayList<>();
 
@@ -51,7 +56,7 @@ public class EndScreenActivity extends AppCompatActivity {
         timer.setText(formattedTime);
         Button restartGameButton = findViewById(R.id.restartGameButton);
         Button highscoreButton = findViewById(R.id.highscoresButton);
-        highscoreButton.setOnClickListener(v -> launchMainActivity());
+        highscoreButton.setOnClickListener(v -> launchHighscores());
         restartGameButton.setOnClickListener(v -> launchMainActivity());
 
         FirebaseInstallations.getInstance().getId().addOnCompleteListener(task -> {
@@ -80,7 +85,7 @@ public class EndScreenActivity extends AppCompatActivity {
 
                     Map<String, String> values = snapshot.getValue(genericTypeIndicator);
 
-                    TextView bestTime = findViewById(R.id.bestTime);
+                    TextView bestTimeView = findViewById(R.id.bestTime);
 
                     if (snapshot.exists()) {
                         String points1 = values.get("score1") + "";
@@ -111,12 +116,15 @@ public class EndScreenActivity extends AppCompatActivity {
                                 break myloop;
                             }
                         }
-                        String doubleFormat1 = new DecimalFormat("##.0").format(topScoreList.get(0));
-                        String doubleFormat2 = new DecimalFormat("##.0").format(topScoreList.get(1));
-                        String doubleFormat3 = new DecimalFormat("##.0").format(topScoreList.get(2));
-                        String doubleFormat4 = new DecimalFormat("##.0").format(topScoreList.get(3));
-                        String doubleFormat5 = new DecimalFormat("##.0").format(topScoreList.get(4));
-                        addDatatoFirebase(doubleFormat1, doubleFormat2, doubleFormat3, doubleFormat4, doubleFormat5);
+                        doubleFormated1 = new DecimalFormat("##.0").format(topScoreList.get(0));
+                        doubleFormated2 = new DecimalFormat("##.0").format(topScoreList.get(1));
+                        doubleFormated3 = new DecimalFormat("##.0").format(topScoreList.get(2));
+                        doubleFormated4 = new DecimalFormat("##.0").format(topScoreList.get(3));
+                        doubleFormated5 = new DecimalFormat("##.0").format(topScoreList.get(4));
+
+                        addDatatoFirebase(doubleFormated1, doubleFormated2, doubleFormated3, doubleFormated4, doubleFormated5);
+
+                        bestTimeView.setText(doubleFormated1);
                     } else {
                         databaseReference = firebaseDatabase.getReference(allTogetherRefference);
 
@@ -124,7 +132,7 @@ public class EndScreenActivity extends AppCompatActivity {
                         new DecimalFormat("0.0").format(endTime);
                         String formattedTime = new DecimalFormat("##.0").format(endTime);
 
-                        addDatatoFirebase(formattedTime, "100.0", "100.0", "100.0", "100.0");
+                        addDatatoFirebase(formattedTime, "99.0", "99.0", "99.0", "99.0");
                     }
                 }
             }
@@ -156,32 +164,12 @@ public class EndScreenActivity extends AppCompatActivity {
     }
     private void launchHighscores() {
         Intent intent = new Intent(this, HighscoreActivity.class);
+        intent.putExtra("score1", doubleFormated1);
+        intent.putExtra("score2", doubleFormated2);
+        intent.putExtra("score3", doubleFormated3);
+        intent.putExtra("score4", doubleFormated4);
+        intent.putExtra("score5", doubleFormated5);
         startActivity(intent);
     }
 
 }
-//private void checkIfHighscore() {
-//        if(){
-//            addDatatoFirebase(formattedTime);
-//            TextView bestTime = findViewById(R.id.bestTime);
-//            double endTime = getIntent().getExtras().getDouble("time");
-//            String formattedTime = new DecimalFormat("0.0").format(endTime);
-//
-//            bestTime.setText(highscoreList.get(0));
-//        }else{
-//            System.out.println("... got into else");
-//            TextView bestTime = findViewById(R.id.bestTime);
-//            double endTime = getIntent().getExtras().getDouble("time");
-//            String formattedTime = new DecimalFormat("0.0").format(endTime);
-//
-//            int timeInInt = Integer.parseInt(formattedTime);
-//            int highscoreInInt = Integer.parseInt(highscoreList.get(0));
-//            if (timeInInt < highscoreInInt){
-//                bestTime.setText(timeInInt);
-//                highscoreList.clear();
-//                highscoreList.add(formattedTime);
-//            }else{
-//                System.out.println("...bot times are the same");
-//            }
-//        }
-//    }
