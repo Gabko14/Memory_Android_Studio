@@ -105,9 +105,7 @@ public class MainActivity<createButton> extends AppCompatActivity {
         buttonFunction();
         setUpTimer();
     }
-    private void addDatatoFirebase(String points) {
-        highscores.setPoints(points);
-    }
+
     public void buttonFunction() {
 
         for (int counter = 0; counter < buttonsArray.length; counter++) {
@@ -137,7 +135,6 @@ public class MainActivity<createButton> extends AppCompatActivity {
 
         Intent intent = new Intent(this, EndScreenActivity.class);
         intent.putExtra("time",timerCounter);
-        System.out.println("im here1 " + timerCounter);
         startActivity(intent);
     }
 
