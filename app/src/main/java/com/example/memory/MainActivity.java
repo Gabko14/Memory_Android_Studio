@@ -166,6 +166,7 @@ public class MainActivity<createButton> extends AppCompatActivity {
             openedCardsImages.clear();
             openedCards.clear();
             cardCounter = 0;
+            pointsCounter = 0;
             button.setImageResource(0);
             button.setBackgroundTintList(ColorStateList.valueOf(Color.rgb(166, 29, 29)));
             Collections.shuffle(imageList);
