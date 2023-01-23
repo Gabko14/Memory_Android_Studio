@@ -8,10 +8,11 @@
         <entry key="..\:/Users/Schnupperlehrling/AndroidStudioProjects/Memory/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/Schnupperlehrling/AndroidStudioProjects/Memory/app/src/main/res/layout/activity_main2.xml" value="0.33" />
         <entry key="..\:/Users/Schnupperlehrling/AndroidStudioProjects/Memory/app/src/main/res/layout/activity_main_start.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/keinUser/StudioProjects/Memory_Android_Studio/app/src/main/res/layout/activity_end_screen.xml" value="0.3428442028985507" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
